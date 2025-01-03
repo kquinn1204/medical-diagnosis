@@ -25,11 +25,11 @@ main:
     enabled: true
     clusterGroupChartVersion: 0.9.*
 
-# Example Configuration
-  #datacenter:
-  #  cloudProvider: aws
-  #  storageClassName: gp2
-  #  region: us-east-1
-  #  clustername: example-sample
-  #  domain: patterns.redhat.com
+Example Configuration
+  datacenter:
+   cloudProvider: aws
+   storageClassName: gp3-csi
+   region: us-east-1
+   clustername: kevstestcluster
+   domain: aws.validatedpatterns.io
 
