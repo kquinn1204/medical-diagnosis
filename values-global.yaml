@@ -7,7 +7,11 @@ global:
     installPlanApproval: Automatic
 
   datacenter:
+    cloudProvider: aws
     storageClassName: gp3-csi
+    region: us-east-1
+    clustername: kevstestcluster
+    domain: aws.validatedpatterns.io
 
   xraylab:
     namespace: "xraylab-1"
@@ -15,7 +19,7 @@ global:
     s3:
       # Values for S3 bucket access
       # bucketSource: "provide s3 bucket name where images are stored"
-      bucketSource: kevtest-bucket
+      bucketSource: validated-patterns-md-xray
       # Bucket base name used for image-generator and image-server applications.
       bucketBaseName: "xray-source"
 
@@ -25,10 +29,10 @@ main:
     enabled: true
     clusterGroupChartVersion: 0.9.*
 
-
-  datacenter:
-    cloudProvider: aws
-    storageClassName: gp3-csi
-    region: us-east-1
-    clustername: kevstestcluster
-    domain: aws.validatedpatterns.io
+# Example Configuration
+  #datacenter:
+  #  cloudProvider: aws
+  #  storageClassName: gp2
+  #  region: us-east-1
+  #  clustername: example-sample
+  #  domain: patterns.redhat.com
