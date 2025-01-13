@@ -8,6 +8,10 @@ global:
 
   datacenter:
     storageClassName: gp3-csi
+    cloudProvider: aws
+    region: us-east-1
+    clustername: mytestcluster
+    domain: aws.validatedpatterns.io
 
   xraylab:
     namespace: "xraylab-1"
