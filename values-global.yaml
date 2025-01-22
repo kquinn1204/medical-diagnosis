@@ -8,6 +8,10 @@ global:
 
   datacenter:
     storageClassName: gp3-csi
+    cloudProvider: aws
+    region: us-east-1
+    clustername: kevstestcluster
+    domain: aws.validatedpatterns.io
 
   xraylab:
     namespace: "xraylab-1"
@@ -15,7 +19,7 @@ global:
     s3:
       # Values for S3 bucket access
       # bucketSource: "provide s3 bucket name where images are stored"
-      bucketSource: validated-patterns-md-xray
+      bucketSource: kevtest-bucket
       # Bucket base name used for image-generator and image-server applications.
       bucketBaseName: "xray-source"
 
